@@ -5,94 +5,24 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
 .menu-mobile{
-    display: inline;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.icone-menu{
-    width: 25%;
-    font-size: 35px;
     display: none;
-    color: white;    
 }
-@media (max-width: 425px)
-{
-  .icone-menu{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: black;
-   }
-}
-
-
-.paragraph-menu{
-    width: 25%;
-    font-family: 'Montserrat', 'black';
-    font-size: 30px;
-    font-weight: bolder;
-    display: none;
-    color: black;    
-}
-@media (max-width: 425px)
-{
-.paragraph-menu{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: white;
-   }
-}
-
 
 .menu-header{
-    width: 100%;
-    display: inline;
+    width: 100vw;
+    height: 20%;
     display: flex;
-    justify-content: space-evenly;
-}
-@media (max-width: 425px)
-{
-  .menu-header{
-    width: 100%;
-    display: none;
-   }
-}
-
-@media (max-width: 768px)
-{
-  .menu-header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    text-align: center;
-   }
 }
 
-
-.h1-header{
-    width: 30%;
+.h1-menu{
+    
     font-family: 'Montserrat', 'bold';
-    font-size: 40px;
+    font-size: 5vh;
     color: #000000;
 }
-
-.nav-header{
-    width: 50%;
-}
-
 
 ul{
     list-style: none; 
@@ -103,7 +33,7 @@ ul{
 
 li{
     font-family: 'Montserrat', 'light';
-    font-size: 20px;
+    font-size: 4vh;
     color: #707070;
     text-transform: capitalize;
     display: flex;
@@ -122,84 +52,95 @@ a:hover{
     font-weight: bolder;
 }
 
-.texts-header{
-background-image: url(../portflow/imagens/laranja\ azul\ recorte.png);
-background-size: cover;
-width: 100%;
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-
-.h2-header{
-    width: 100%;
-    font-family: 'Montserrat', 'ExtraBold';
-    font-size: 78px; 
-    color: #FFFFFF;
-}
-
-
-.paragraph-header{
-    
-    font-family: 'Montserrat', 'Light';
-    font-size: 35px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-
-.gallery{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.contents-header{
+    height: 100vh;
+    background-image: url(../portflow/imagens/laranja\ azul\ recorte.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
     flex-direction: column;
 }
 
+.h2-header{
+    font-family: 'Montserrat', 'ExtraBold';
+    font-size: 10vh; 
+    color: #FFFFFF;
+    margin-top: 10rem;
+    margin-left: 2rem;
+}
 
-.photograpy1{
-    width: 20%;
+.paragraph-header{
+    font-family: 'Montserrat', 'Light';
+    font-size: 4vh;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 2rem;
+}
+
+main{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    display:flex;
+    flex-direction: column;
+}
+
+.box-1, .box-2, .box-3{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.photo-box-1, .photo-box-2, .photo-box-3{
+    width: 20%;
+    height: 30%;
+    margin: 1rem;
     
 }
 
+
+ 
 
 
 .footer{
-    width:100vw;
-    background-color: #F6F6F6;
+    width: 100vw;
+    height: 30%;
     display: flex;
-    flex-direction: row;
-    margin: 1rem;
-    padding: 2rem;
-}
-
-.icones{
-    width: 25%;
-    display: flex;
-    cursor: pointer;
+    justify-content: space-around;
+    align-items: center;
     
 }
 
+.icones{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer; 
+    margin-left: 3rem;
+}
+
 .h3-footer{
-    width: 15%;
     font-family: 'Montserrat', 'Bold';
-    font-size: 20px;
+    font-size: 3vh;
     color: #000000;
     text-transform:capitalize;
+    margin-left: 3rem;
 }
 
 .paragraph-footer{
-    width: 60%;
+    margin-left: 4rem;
+   width: 60%;
     font-family: 'Montserrat', 'Light';
-    font-size: 15px;
+    font-size: 2vh;
     color: #000000;
     text-transform:capitalize;
 }
 
 button{
-    font-size: 12px;
+    width: 11vh;
+    height: 4vh;
+    font-size: 2vh;
     font-family: 'Montserrat', 'Light';    
     cursor: pointer;
     color: #CCCCCC;
@@ -207,11 +148,8 @@ button{
     border: #707070;
     display: none;   
     cursor: pointer;
+    text-transform: uppercase;
 }
- 
-
-
-
 
 
 
