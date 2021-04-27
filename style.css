@@ -10,16 +10,14 @@ body{
 }
 
 .menu-mobile{
-    display: none;
     width: 100%;
-    background-size:cover;
-    background-repeat: no-repeat;
+    display: none;  
 }
-@media (max-width:767px){
+@media (max-width:425px){
     .menu-mobile{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     }
 }
 
@@ -36,21 +34,30 @@ body{
 .logo-menu-mobile{
     width: 40%; 
     margin-left: 2rem;
-      
 }
 
+.menu-header{
+    max-width: 1024px;
+}
+
+
+@media (max-width:425px){
+    .menu-header{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    .menu-header{
+        background-position-x: 20%;
+    }
+}
 .nav-header{
     width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-}
-
-@media (max-width:767px){
-    .menu-header{
-    display: none;
-    }
 }
 
 .logo{
@@ -88,18 +95,23 @@ a:hover{
 }
 
 .contents-header{
+    width: 100%;
     height: 100vh;
     background-image: url(../portflow/imagens/laranja\ azul\ recorte.png);
     background-repeat: no-repeat;
     background-size: cover;
     display:flex;
     flex-direction: column;
-    background-size: 100%;
+    justify-content: center;
 }
 @media (max-width:425px){
     .contents-header{
         height: 100vh;
-        background-size: 100%;
+        background-position-x: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         align-items: center;  
     }
 }
 
@@ -107,15 +119,8 @@ a:hover{
     font-family: 'Montserrat', 'ExtraBold';
     font-size: 10vh; 
     color: #FFFFFF;
-    margin-top: 10rem;
-    margin-left: 2rem;
-}
-@media (max-width:768px){
-    .h2-header{
-        font-size: 8vh;
-        margin-top: 8rem;
-        margin-left: 2rem;
-    }
+    margin-left: 3rem;
+    
 }
 
 .paragraph-header{
@@ -123,72 +128,70 @@ a:hover{
     font-size: 4vh;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-left: 2rem;
-    margin-top: 1rem;
-}
-@media (max-width:768px){
-    .paragraph-header{
-        font-size: 4vh;
-        margin-top: 1rem;
-        margin-left: 2rem;
-    }
+    margin-left: 3rem;
+
+    
 }
 
-.box{
-    width: 100vw;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-@media (max-width: 768px){
-    .box{
-    display:flex;
-    width: 100vw;
-    flex-direction: column;
+.container-photos{
+    max-width: 1024px;
+    width: 100%;
+    display:flex;     
+    flex-wrap: wrap;
     align-items: center;
-    }
+    justify-content: center; 
 }
 
 .photo-box{
-    width: 75%;
+    width: 20%;
+    margin: 1rem;
 }
-@media (max-width:768px){
+@media (max-width:425px){
     .photo-box{
-        width: 30vh;
-        margin: 1rem;
-        display: inline;        
-}
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         align-items: center;   
+    }
 }
 
 .footer{
-    width: 80vw;
-    height: 50%;
+    max-width: 1024px;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-left: 5rem;
+    background-color: #F6F6F6;
 }
 
 .icones{
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
+    max-width: 100%;
     cursor: pointer; 
+}
+@media (max-width:425px){
+    .icones{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+         align-items: center;
+         background-color: #7FDBD4;
+    }
 }
 
 .h3-footer{
-    width: 10%;
-    margin-left: 2rem;
-    margin-right: 1rem;
+    width: 100%;
     font-family: 'Montserrat', 'Bold';
     font-size: 3vh;
     color: #000000;
     text-transform:capitalize;
 }
 
-.paragraph-footer{
-    width: 80%;
+.paragraph-footer{  
+    max-width: 100%;
     font-family: 'Montserrat', 'Light';
     font-size: 2vh;
     color: #000000;
@@ -196,21 +199,30 @@ a:hover{
 }
 
 .button{
+    max-width: 100%;
     font-size: 4vh;
     font-family: 'Montserrat', 'Light';    
     cursor: pointer;
     color: #CCCCCC;
-    text-transform: uppercase;
+    background-color: gray;
+    border: 2px solid #707070;
+    border-radius:4px;
+    text-transform: capitalize;
     display: flex;
     justify-content: center;
     display: none;
     }
 
-@media (max-width:767px){
+@media (max-width:425px){
     .button{
-        width: 100%;
         display: flex;
-        flex-direction: row;
+        text-align: center;
     }
 }
 
+@media (max-width:425px){
+    .h3-footer, .paragraph-footer, .button{
+        display: flex;
+        text-align: center;
+    }
+}
