@@ -62,9 +62,16 @@ body{
 }
 
 .logo{
-    width: 100%;
+    width: 50%;
+    font-family: 'Montserrat', 'Bold';
+    font-size: 6vh;
+    color:#000000;
+    text-transform: capitalize;
     display:flex;
     flex-direction: row;
+    align-items: center;
+    margin-left: 3rem;
+
 }
 
 ul{
