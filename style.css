@@ -2,181 +2,114 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
+    /*HEADER*/
 
-body{
-    height: auto;
-}
-
-.menu-mobile{
-    display: none;  
-}
-
-.icone-menu{
-    width: 40%;
-    font-size: 10vh;
-    color: #FFFFFF;
-    background-color: black;
-    display: flex;
+header{
+    height:10vh;
+    display:flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+    background-color: #FFFFFF;
+}
+.navegationHeader{
+    width: 70%;
+    /* border:solid red; */
 }
 
-.logo-menu-mobile{
-    width: 40%; 
-    margin-left: 2rem;
-}
-
-.nav-header{
+.list{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: flex-end;
+}
+
+.itemList{
+    list-style: none;
+    font-size: 1.5rem;
+    margin-right:5rem;
+
+}
+
+.itemList:hover{
+    font-size: 2rem;
+font-weight: 800;
+}
+
+    /*MAIN*/
+
+
+
+.backgroundHeader{
+    height: 80vh;
+    background-image: url("./imagens/background.png");
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.titleBackground{
+font-size: 5rem;
+color: #FFFFFF;
+padding-left: 20rem;
+}
+
+.paragraphBackground{
+    font-size: 2rem;
+    color: #FFFFFF;
+   font-weight: 300;
+   padding-left: 20rem;
+
+    }
+
+div{
+    display:flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+    .imgContainer{
+        width: 20%;
+    }
+
+    /*FOOTER*/
+footer{
+    background-color: #F6F6F6;
+    height: 10vh;
+    display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.logo{
-    font-family: 'Montserrat', 'Bold';
-    font-size: 5vh;
-    color:#000000;
-    text-transform: capitalize;
-
+.navegationSociais{
+    width: 30vw;
 }
 
-ul{
-    list-style: none; 
+.listSociais{
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+justify-content: space-evenly;
+align-items: center;
 }
 
-li{
-    font-family: 'Montserrat', 'light';
-    font-size: 3vh;
-    color: #707070;
-    text-transform: capitalize;
+.listIcons{
+    list-style: none;
+}
+
+.boxFooter{
     display: flex;
-    justify-content: space-evenly;
-    margin:1rem;
+    width: 40vw;
+
 }
 
-a{
-    text-decoration: none;
-    color: #000000;
+p{
+    width: 30vw;
+    font-size: 1.2rem;
+
 }
 
-a:hover{
-    font-family: 'Montserrat', 'black';
-    font-size: 3vh;
-    color: #000000;
-    font-weight: bolder;
-    cursor:pointer;
-}
 
-.contents-header{
-    height: 70vh;
-    background-image: url(../portflow/imagens/laranja\ azul\ recorte.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 2rem;  
-}
-
-.h2-header{
-    font-family: 'Montserrat', 'ExtraBold';
-    font-size: 7vh; 
-    color: #FFFFFF;
-}
-
-.paragraph-header{
-    font-family: 'Montserrat', 'Light';
-    font-size: 3vh;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.container-photos{
-    
-    display:flex;     
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; 
-}
-
-.photo-box{
-    width: 20%;
-    margin: 1rem;
-}
-footer{
-    height: 20vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #F6F6F6
-}
-
-.container-footer{
-    width: 90%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.icones{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.icones-redes{
-    margin-left: 1rem;
-}
-
-.texts-footer{
-    width: 60%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.h3-footer{
-    font-family: 'Montserrat', 'Bold';
-    font-size: 3vh;
-    color: #000000;
-    text-transform:capitalize;
-    margin-right: 1rem;
-}
-
-.paragraph-footer{  
-    font-family: 'Montserrat', 'Light';
-    font-size: 2vh;
-    color: #000000;
-    text-transform:capitalize;
-    cursor: pointer; 
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.button{
-    width: 50%;
-    font-size: 4vh;
-    font-family: 'Montserrat', 'Light';    
-    cursor: pointer;
-    color: #CCCCCC;
-    background-color:#707070;
-    border-radius:10%;
-    text-transform: capitalize;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    }
-    .a-footer{
-        text-decoration: none;
-    color: #CCCCCC;
-    }
-
+/* 
        @media (max-width:520px){
         .button{
             width: 20%;
@@ -259,4 +192,4 @@ footer{
         flex-direction: row;
         align-items: center;
         }
-    }
+    } */
